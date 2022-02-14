@@ -13,3 +13,5 @@ server_socket.bind((IP, PORT))
 server_socket.listen()
 
 sockets_list = [server_socket]
+
+clients = {}
