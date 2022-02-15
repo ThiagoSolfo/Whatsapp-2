@@ -14,8 +14,8 @@ import select
 import sys
 
 HEADER_LENGTH = 10
-IP = "189.114.218.56"
-PORT = 8221
+IP = "372a-189-114-218-56.ngrok.io"
+PORT = 8080
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)

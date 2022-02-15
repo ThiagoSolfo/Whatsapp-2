@@ -5,8 +5,8 @@ import sys
 
 HEADER_LENGTH = 10
 
-IP = "189.114.218.56"
-PORT = 8221
+IP = "372a-189-114-218-56.ngrok.io"
+PORT = 8080
 
 my_username = input("Username: ")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #socket(var IPv4, var TCP)
