@@ -11,12 +11,13 @@ else:
 
 import socket
 import select
+import sys
 
 HEADER_LENGTH = 10
 IP = "127.0.0.1"
 PORT = 8000
 
-server_socket =  socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 server_socket.bind((IP, PORT))
@@ -40,6 +41,9 @@ def receive_message(client_socket):
 		return False
 
 while True:
+	exit = int(input(""))
+	if exit == 1:
+		sys.exit()
 	read_sockets, _, exception_sockets = select.select(sockets_list, [], sockets_list)
 
 	for notified_socket in read_sockets:
