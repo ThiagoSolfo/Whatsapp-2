@@ -6,10 +6,10 @@ import sys
 HEADER_LENGTH = 10
 
 IP = "127.0.0.1"
-PORT = 8080
+PORT = 8000
 
 my_username = input("Username: ")
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #socket(var IPv4, var TCP)
 client_socket.connect((IP, PORT))
 
 client_socket.setblocking(False)
