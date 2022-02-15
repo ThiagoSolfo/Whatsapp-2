@@ -14,8 +14,8 @@ import select
 import sys
 
 HEADER_LENGTH = 10
-IP = "127.0.0.1"
-PORT = 8000
+IP = "189.114.218.56"
+PORT = 8221
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
