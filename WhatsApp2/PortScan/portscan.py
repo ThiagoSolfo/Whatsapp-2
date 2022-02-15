@@ -1,8 +1,7 @@
 import socket
 import sys
-a
 # Array de portas para serem verificadas
-ports = [80, 443, 21, 22, 23, 25, 3306, 8080, 8000, 405, 404, 19, 18, 50, 2227]
+ports = [80, 443, 21, 22, 23, 25, 3306, 8080, 8000, 405, 404, 19, 18, 50, 2227, 5000]
 
 # Abre o protocolo TCP e pega o IPV4 (ou um IPV4 personalizado por argumento)
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
